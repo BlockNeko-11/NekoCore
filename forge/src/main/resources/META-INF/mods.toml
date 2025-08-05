@@ -7,9 +7,7 @@ license = "${license}"
 modId = "${id}"
 version = "${version}"
 displayName = "${name}"
-
-# [Customize]
-authors = "Me!"
+authors = "BlockNeko-11"
 credits = ""
 
 displayURL = "${home_page}"

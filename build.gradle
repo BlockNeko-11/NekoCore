@@ -2,8 +2,7 @@ plugins {
     id "architectury-plugin" version "3.4-SNAPSHOT"
     id "dev.architectury.loom" version "1.7-SNAPSHOT" apply false
     id "com.github.johnrengelman.shadow" version "8.1.1" apply false
-    // Forgix
-    // id "io.github.pacifistmc.forgix" version "1.2.9"
+    id "io.github.pacifistmc.forgix" version "1.2.9"
 }
 
 architectury {
@@ -95,20 +94,20 @@ subprojects {
     }
 }
 
-// forgix {
-//     group = rootProject.maven_group
-//     mergedJarName = rootProject.archives_base_name + "-" + rootProject.minecraft_version + "-" + rootProject.mod_version + ".jar" // (Required Value)
-//     outputDir = "build/libs/merged"
-//
-//     forge {
-//         projectName = "forge"
-//         jarLocation = "build/libs/" + rootProject.archives_base_name + "-forge-" + rootProject.minecraft_version + "-" + rootProject.mod_version + ".jar"
-//
-//         mixin "${rootProject.mod_id}.mixins.json"
-//     }
-//
-//     fabric {
-//         projectName = "fabric"
-//         jarLocation = "build/libs/" + rootProject.archives_base_name + "-fabric-" + rootProject.minecraft_version + "-" + rootProject.mod_version + ".jar"
-//     }
-// }
+forgix {
+    group = rootProject.maven_group
+    mergedJarName = rootProject.archives_base_name + "-" + rootProject.minecraft_version + "-" + rootProject.mod_version + ".jar" // (Required Value)
+    outputDir = "build/libs/merged"
+
+    forge {
+        projectName = "forge"
+        jarLocation = "build/libs/" + rootProject.archives_base_name + "-forge-" + rootProject.minecraft_version + "-" + rootProject.mod_version + ".jar"
+
+        mixin "${rootProject.mod_id}.mixins.json"
+    }
+
+    fabric {
+        projectName = "fabric"
+        jarLocation = "build/libs/" + rootProject.archives_base_name + "-fabric-" + rootProject.minecraft_version + "-" + rootProject.mod_version + ".jar"
+    }
+}

@@ -5,6 +5,7 @@
   "name": "${name}",
   "description": "${description}",
   "authors": [
+    "BlockNeko-11"
   ],
   "contributors": [
   ],
@@ -18,17 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "io.github.blockneko11.nekoplatform.fabric.NekoPlatformModFabric"
     ],
     "client": [
-      "net.examplemod.client.fabric.ExampleModClientFabric"
-    ],
-    "fabric-datagen": [
-      "net.examplemod.data.fabric.ExampleModDataGenerationFabric"
+      "io.github.blockneko11.nekoplatform.client.fabric.NekoPlatformModClientFabric"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json"
+    "neko-platform.mixins.json"
   ],
   "depends": {
     "fabric": "*",
