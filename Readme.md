@@ -1,0 +1,1 @@
+# Architectury Mod Template
