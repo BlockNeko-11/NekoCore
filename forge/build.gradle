@@ -16,20 +16,15 @@ sourceSets {
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
 
+    runConfigs.configureEach {
+        it.ideConfigGenerated false
+    }
+
     forge {
         convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
 
-        mixinConfig "neko-platform.mixins.json"
-    }
-
-    runs {
-        data {
-            data()
-            programArgs "--all", "--mod", "examplemod"
-            programArgs "--output", generatedResources.absolutePath
-//            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
-        }
+        mixinConfig "nekoplatform.mixins.json"
     }
 }
 

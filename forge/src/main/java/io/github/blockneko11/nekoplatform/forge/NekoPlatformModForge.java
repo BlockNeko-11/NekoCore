@@ -4,9 +4,11 @@ package io.github.blockneko11.nekoplatform.forge;
 import io.github.blockneko11.nekoplatform.NekoPlatformMod;
 import io.github.blockneko11.nekoplatform.client.NekoPlatformModClient;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 
+@Mod(NekoPlatformMod.MOD_ID)
 public class NekoPlatformModForge {
     public NekoPlatformModForge() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();

@@ -1,0 +1,42 @@
+modLoader = "javafml"
+loaderVersion = "[0,)"
+license = "Unlicensed"
+
+[[mods]]
+modId = "testmod"
+version = "1.0.0"
+displayName = "Test Mod"
+authors = "Me!"
+displayURL = "https://example.com"
+description = '''
+Test Mod
+'''
+logoFile = "icon.png"
+
+[[dependencies.testmod]]
+modId = "forge"
+mandatory = true
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.testmod]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.testmod]]
+modId = "architectury"
+mandatory = true
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.testmod]]
+modId = "nekoplatform"
+mandatory = true
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"

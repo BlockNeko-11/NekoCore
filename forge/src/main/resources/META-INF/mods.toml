@@ -9,7 +9,6 @@ version = "${version}"
 displayName = "${name}"
 authors = "BlockNeko-11"
 credits = ""
-
 displayURL = "${home_page}"
 description = '''
 ${description}
