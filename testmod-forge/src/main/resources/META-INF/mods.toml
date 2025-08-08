@@ -35,7 +35,7 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.testmod]]
-modId = "nekoplatform"
+modId = "nekocore"
 mandatory = true
 versionRange = "[0,)"
 ordering = "AFTER"

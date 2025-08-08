@@ -2,7 +2,7 @@ package com.example.testmod.registry;
 
 import com.example.testmod.TestMod;
 import dev.architectury.registry.registries.RegistrySupplier;
-import io.github.blockneko11.nekoplatform.registry.arch.DeferredRegisterManager;
+import io.github.blockneko11.nekocore.registry.arch.DeferredRegisterManager;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 

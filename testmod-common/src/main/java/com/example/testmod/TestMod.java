@@ -3,7 +3,7 @@ package com.example.testmod;
 import com.example.testmod.event.TestEvent;
 import com.example.testmod.event.TestEventListener;
 import com.example.testmod.registry.TestRegistry;
-import io.github.blockneko11.nekoplatform.event.bus.EventBus;
+import io.github.blockneko11.nekocore.event.bus.EventBus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +18,7 @@ public final class TestMod {
         LOGGER.info("Hello from Test Mod!");
         TestRegistry.init();
         BUS.registerClass(new TestEventListener());
-        BUS.registerListener(TestMod::onTestEventTriggered);
+        BUS.registerListener(TestMod::onTestEventTriggered, 1);
     }
 
     private static void onTestEventTriggered(TestEvent e) {

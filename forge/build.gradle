@@ -24,7 +24,7 @@ loom {
         convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
 
-        mixinConfig "nekoplatform.mixins.json"
+        mixinConfig "nekocore.mixins.json"
     }
 }
 

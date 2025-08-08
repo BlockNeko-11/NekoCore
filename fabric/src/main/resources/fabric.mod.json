@@ -19,14 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.blockneko11.nekoplatform.fabric.NekoPlatformModFabric"
+      "io.github.blockneko11.nekocore.fabric.NekoCoreModFabric"
     ],
     "client": [
-      "io.github.blockneko11.nekoplatform.client.fabric.NekoPlatformModClientFabric"
+      "io.github.blockneko11.nekocore.client.fabric.NekoCoreModClientFabric"
     ]
   },
   "mixins": [
-    "nekoplatform.mixins.json"
+    "nekocore.mixins.json"
   ],
   "depends": {
     "fabric": "*",

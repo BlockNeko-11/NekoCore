@@ -1,4 +1,4 @@
-package io.github.blockneko11.nekoplatform.event.bus;
+package io.github.blockneko11.nekocore.event.bus;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package io.github.blockneko11.nekoplatform.registry.arch;
+package io.github.blockneko11.nekocore.registry.arch;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;

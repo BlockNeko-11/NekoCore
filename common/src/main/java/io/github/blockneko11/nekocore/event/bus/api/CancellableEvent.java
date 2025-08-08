@@ -1,4 +1,4 @@
-package io.github.blockneko11.nekoplatform.event.bus.api;
+package io.github.blockneko11.nekocore.event.bus.api;
 
 import lombok.Getter;
 
