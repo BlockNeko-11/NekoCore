@@ -26,7 +26,8 @@
     ]
   },
   "mixins": [
-    "nekocore.mixins.json"
+    "nekocore.mixins.json",
+    "nekocore-fabric.mixins.json"
   ],
   "depends": {
     "fabric": "*",

@@ -1,1 +1,9 @@
 accessWidener   v2  named
+# Model Provider
+accessible field net/minecraft/data/client/ModelProvider blockstatesPathResolver Lnet/minecraft/data/DataOutput$PathResolver;
+accessible field net/minecraft/data/client/ModelProvider modelsPathResolver Lnet/minecraft/data/DataOutput$PathResolver;
+
+# Tag Provider
+extendable method net/minecraft/registry/tag/TagEntry <init> (Lnet/minecraft/util/Identifier;ZZ)V
+accessible field net/minecraft/registry/tag/TagEntry id Lnet/minecraft/util/Identifier;
+accessible field net/minecraft/registry/tag/TagEntry required Z
