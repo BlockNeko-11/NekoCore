@@ -1,6 +1,8 @@
 # Neko Core
 A cross-loader development library provides utilities and shared code in my mods.
 
+Now it does not depend on Architectury API.
+
 ## Features
 - "DeferredRegister" manager (based on Architectury API)
 - Event bus (like Bukkit & Forge)
@@ -10,7 +12,6 @@ A cross-loader development library provides utilities and shared code in my mods
 - Many helpers and utilities
 
 ## Todo
-- [ ] Item group API
 - [ ] New register
   - [ ] Annotated register
   - [ ] Custom registry

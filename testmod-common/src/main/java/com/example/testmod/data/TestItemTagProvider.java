@@ -16,6 +16,7 @@ public class TestItemTagProvider extends NekoTagProvider.ItemTagProvider {
     public void configure(RegistryWrapper.WrapperLookup lookup) {
         this.getTagBuilder(TestRegistry.TEST_ITEM_TAG)
                 .replace(true)
-                .add(TestRegistry.TEST_ITEM.get());
+                .add(TestRegistry.TEST_ITEM_1.get())
+                .add(TestRegistry.TEST_ITEM_2.get());
     }
 }
