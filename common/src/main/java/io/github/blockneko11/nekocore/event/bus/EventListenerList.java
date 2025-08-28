@@ -18,7 +18,7 @@ class EventListenerList<T extends Event> {
     }
 
     void post(T event) {
-        this.delegate.sort((o1, o2) -> o2.getPriority() - o1.getPriority());
+        this.delegate.sort(EventListener::compare);
         this.delegate.forEach(listener -> listener.handle(event));
     }
 }

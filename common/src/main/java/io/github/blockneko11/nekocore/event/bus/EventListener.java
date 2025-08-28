@@ -18,6 +18,10 @@ abstract class EventListener<T extends Event> {
 
     protected abstract void handle(T event);
 
+    static int compare(EventListener<?> a, EventListener<?> b) {
+        return b.priority - a.priority;
+    }
+
     static final class MethodListener<T extends Event> extends EventListener<T> {
         private final Method method;
 
