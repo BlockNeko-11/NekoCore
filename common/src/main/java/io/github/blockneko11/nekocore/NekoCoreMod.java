@@ -1,6 +1,7 @@
 package io.github.blockneko11.nekocore;
 
 import dev.architectury.platform.Platform;
+import io.github.blockneko11.nekocore.util.schedule.TaskScheduler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,8 @@ public final class NekoCoreMod {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
     
     public static void init() {
-        LOGGER.info("Mod {} loaded. Version: {}", MOD_ID, MOD_VERSION);
+        LOGGER.info("Meow! {} is loaded! Current version: {}", MOD_NAME, MOD_VERSION);
+
+        TaskScheduler.init();
     }
 }

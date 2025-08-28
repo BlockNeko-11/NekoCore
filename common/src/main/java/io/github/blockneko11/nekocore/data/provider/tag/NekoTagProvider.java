@@ -49,7 +49,7 @@ public abstract class NekoTagProvider<T> implements DataProvider {
             }
         }
 
-        throw new UnsupportedOperationException("Adding objects is not supported by " + this.getClass().getCanonicalName());
+        throw new UnsupportedOperationException("Cannot query the registry key for type " + this.getClass().getCanonicalName());
     }
 
     public abstract void configure(RegistryWrapper.WrapperLookup lookup);
