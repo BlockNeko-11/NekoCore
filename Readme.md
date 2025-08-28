@@ -6,6 +6,7 @@ A cross-loader development library provides utilities and shared code in my mods
 - Event bus (like Bukkit & Forge)
 - Cross-loader data generation (refer to Fabric API)
 - Task scheduler (like Bukkit)
+- Cross-version abstractions to prevent breaking changes
 - Many helpers and utilities
 
 ## Todo
@@ -14,4 +15,4 @@ A cross-loader development library provides utilities and shared code in my mods
   - [ ] Annotated register
   - [ ] Custom registry
 - [ ] Config API
-- [ ] Data-driven things
+- [ ] Data-driven things (Probably will be done in other mods)
