@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 
 public class EventBus {
-    private final Map<Class<? extends Event>, EventListenerList<?>> listeners = new ConcurrentHashMap<>();
+    private final Map<Class<? extends Event>, EventListeners<?>> listeners = new ConcurrentHashMap<>();
 
     public void registerClass(Object o) {
         Class<?> type = o.getClass();
@@ -72,15 +72,15 @@ public class EventBus {
     }
 
     private <T extends Event> void register(Class<T> eventType, EventListener<T> listener) {
-        EventListenerList<T> list = (EventListenerList<T>) this.listeners.computeIfAbsent(
+        EventListeners<T> list = (EventListeners<T>) this.listeners.computeIfAbsent(
                 eventType,
-                $ -> new EventListenerList<>());
+                $ -> new EventListeners<>());
 
         list.add(listener);
     }
 
     public <T extends Event> void post(T event) {
-        EventListenerList<T> list = (EventListenerList<T>) this.listeners.get(event.getClass());
+        EventListeners<T> list = (EventListeners<T>) this.listeners.get(event.getClass());
         if (list == null) {
             return;
         }

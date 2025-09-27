@@ -13,7 +13,7 @@ abstract class EventListener<T extends Event> {
     }
 
     int getPriority() {
-        return priority;
+        return this.priority;
     }
 
     protected abstract void handle(T event);

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class EventListenerList<T extends Event> {
+class EventListeners<T extends Event> {
     private final List<EventListener<T>> delegate = Collections.synchronizedList(new ArrayList<>());
 
     void add(EventListener<T> listener) {

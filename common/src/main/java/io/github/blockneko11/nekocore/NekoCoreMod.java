@@ -12,7 +12,7 @@ public final class NekoCoreMod {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
     
     public static void init() {
-        LOGGER.info("Meow! {} is loaded! Current version: {}", MOD_NAME, MOD_VERSION);
+        LOGGER.info("{} is loaded! Current version: {}", MOD_NAME, MOD_VERSION);
 
         TaskScheduler.init();
     }
