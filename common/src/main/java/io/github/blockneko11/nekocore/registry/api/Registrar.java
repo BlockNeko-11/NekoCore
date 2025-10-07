@@ -1,7 +1,7 @@
 package io.github.blockneko11.nekocore.registry.api;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
-import io.github.blockneko11.nekocore.util.multiversion.util.IdentifierUtil;
+import io.github.blockneko11.nekocore.multiversion.util.IdentifierUtil;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;

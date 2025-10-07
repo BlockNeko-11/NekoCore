@@ -1,4 +1,4 @@
-package io.github.blockneko11.nekocore.util.multiversion.text;
+package io.github.blockneko11.nekocore.multiversion.text;
 
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;

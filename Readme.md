@@ -1,8 +1,6 @@
 # Neko Core
 A cross-loader development library provides utilities and shared code in my mods.
 
-Now it does not depend on Architectury API.
-
 ## Features
 - "DeferredRegister" manager (based on Architectury API)
 - Forge-like Event bus
@@ -10,6 +8,11 @@ Now it does not depend on Architectury API.
 - Bukkit-like Scheduler
 - Cross-version abstractions to prevent breaking changes
 - Many helpers and utilities
+
+## Dependencies
+| Mod              | Loader        | Version | Type     | Links                                                 |
+|------------------|---------------|---------|----------|-------------------------------------------------------|
+| Architectury API | Fabric, Forge | Any     | Required | [Modrinth](https://modrinth.com/mod/architectury-api) |
 
 ## Todo
 - [ ] New register

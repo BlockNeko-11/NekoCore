@@ -1,7 +1,7 @@
 package io.github.blockneko11.nekocore.registry.api.forge;
 
+import dev.architectury.platform.forge.EventBuses;
 import io.github.blockneko11.nekocore.registry.api.Registrar;
-import io.github.blockneko11.nekocore.util.forge.ModEventBuses;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
@@ -32,7 +32,7 @@ public final class RegistrarImpl extends Registrar {
 
     @Override
     protected void onRegister() {
-        IEventBus bus = ModEventBuses.get(this.modId);
+        IEventBus bus = EventBuses.getModEventBus(this.modId).orElseThrow();
         this.registers.values().forEach(r -> r.register(bus));
     }
 

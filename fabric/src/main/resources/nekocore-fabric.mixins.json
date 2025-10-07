@@ -6,7 +6,8 @@
   "client": [
   ],
   "mixins": [
-    "access.FabricDataGeneratorAccessor"
+    "access.FabricDataGeneratorAccessor",
+    "access.HoeItemAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

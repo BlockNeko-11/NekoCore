@@ -1,4 +1,4 @@
-package io.github.blockneko11.nekocore.util.multiversion.util;
+package io.github.blockneko11.nekocore.multiversion.util;
 
 import net.minecraft.util.Identifier;
 
